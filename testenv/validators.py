@@ -278,6 +278,11 @@ class SpidMetadataValidator:
                         '{%s}KeyInfo' % (SIGNATURE): {
                             'attrs': {},
                             'children': {
+                                Optional('{%s}KeyName' % (SIGNATURE)): {
+                                    'attrs': {},
+                                    'children': {},
+                                    'text': str
+                                },
                                 '{%s}X509Data' % (SIGNATURE): {
                                     'attrs': {},
                                     'children': {
